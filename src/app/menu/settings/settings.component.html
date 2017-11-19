@@ -1,0 +1,67 @@
+<div class="inside-flex">
+<div class="settings-wrapper">
+  <div class="settings-title"><h2>Settings</h2></div>
+  <div class="settings-form">
+    <div class="set-item set-name-wrapper">
+      <form (ngSubmit)="OnSubmitName(f1)" #f1="ngForm">
+        <div class="form-group">
+        <div class="group">
+          <input type="text" name="username" ngModel required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Name</label>
+        </div>
+        <div class="gr-button">
+        <button [disabled]="!f1.valid" type="submit" class="button7">Save</button>
+        </div>
+        </div>
+      </form>
+    </div>
+    <div class="set-item set-surname-wrapper">
+      <form (ngSubmit)="OnSubmitSurname(f2)" #f2="ngForm">
+        <div class="form-group">
+          <div class="group">
+            <input type="text" name="surname" ngModel required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Surname</label>
+          </div>
+          <div class="gr-button">
+            <button [disabled]="!f2.valid" type="submit" class="button7">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="set-item set-img-wrapper">
+      <form (ngSubmit)="OnSubmitImg(f3)" #f3="ngForm">
+        <div class="form-group">
+          <div class="group">
+            <input type="text" name="img" ngModel required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Image path (url)</label>
+          </div>
+          <div class="gr-button">
+            <button [disabled]="!f3.valid" type="submit" class="button7">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="set-item set-about-wrapper">
+      <form (ngSubmit)="OnSubmitAbout(f4)" #f4="ngForm">
+        <div class="form-group">
+          <div class="group">
+            <textarea class="text-area" name="about" id="about" rows="5" ngModel placeholder="About me" required></textarea>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="gr-button">
+            <button [disabled]="!f4.valid" type="submit" class="button7">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+

@@ -1,0 +1,51 @@
+.user-wrapper{
+  position: relative;
+  float: left;
+  border-bottom: 1px solid dimgray;
+  margin: 25px;
+  width: 160px;
+  height: 240px;
+}
+
+.user-img-wrapper{
+  width: 160px;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inside-flex{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.user-img-wrapper:hover{
+  cursor: pointer;
+}
+
+.user-img{
+  max-width: 160px;
+  max-height: 200px;
+  display: block;
+  border-radius: 35px;
+}
+
+.user-img:hover{
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
+}
+
+.user-name{
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  line-height: 30px;
+  overflow: hidden;
+}
+
+

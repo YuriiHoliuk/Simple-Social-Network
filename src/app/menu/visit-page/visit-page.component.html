@@ -1,0 +1,35 @@
+<div class="inside-flex">
+<div class="profile-wrapper">
+  <div class="profile-name"><h2>{{visitUser.name}} {{visitUser.surname}}</h2></div>
+  <div class="profile-photo-wrapper">
+    <div class="profile-photo">
+      <img [src]="visitUser.img" alt="name" class="profile-img" onerror="this.src = '../../assets/images/Default.jpg'">
+    </div>
+  </div>
+  <div class="friends-query-wrapper">
+    <div class="friends-center-block">
+    <div class="add-friend"><button [disabled]="isFriend" class="button7 btn-add" (click)="onAddFriend(visitUser.id)">Add Friend</button></div>
+    <div class="remove-friend"><button [disabled]="!isFriend" class="button7 btn-remove" (click)="onRemoveFriend(visitUser.id)">Remove Friend</button></div>
+    </div>
+  </div>
+  <div class="about-me">
+    <div class="about-me-item title">
+      <p class="title-pg">About me:</p>
+    </div>
+    <div class="about-me-item text">
+      <p class="text-pg">{{visitUser.about}}</p>
+    </div>
+  </div>
+  <hr>
+  <div class="about-me">
+    <div class="about-me-item title">
+      <p class="title-pg">Friends:</p>
+    </div>
+    <div class="about-me-item friends">
+      <div class="user-ico" *ngFor="let friend of friends" (click)="selectUser(friend.id, friend.surname)">
+        <img [src]="friend.img" alt="{{friend.name}}" class="user-img" onerror="this.src = '../../assets/images/Default.jpg'">
+      </div>
+    </div>
+  </div>
+</div>
+</div>

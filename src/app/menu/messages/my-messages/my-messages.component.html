@@ -1,0 +1,27 @@
+<div class="messages-sheet">
+  <div class="msg-header">
+    <div class="msg-header-block left" (click)="onBack()">
+      <i class="arrow-left"></i><span>Back</span>
+    </div>
+    <div class="msg-header-block center">
+      <span>{{VisitUser.name}} {{VisitUser.surname}}</span>
+    </div>
+    <div class="msg-header-block right">
+      <div class="user-ico">
+        <img [src]="VisitUser.img" alt="{{VisitUser.name}}" class="user-img" onerror="this.src = '../../assets/images/Default.jpg'">
+      </div>
+    </div>
+  </div>
+  <div class="msg-item" *ngFor="let item of length; let ind = index">
+    <p class="msg msg-right" *ngIf="msg.myMsg.index[ind] == currentUserId && item == VisitUserId">{{msg.myMsg.msg[ind]}}</p>
+    <p class="msg msg-left" *ngIf="msg.myMsg.index[ind] == VisitUserId">{{msg.myMsg.msg[ind]}}</p>
+  </div>
+</div>
+<div class="text-area">
+  <form (ngSubmit)="OnSend(f1)" #f1="ngForm">
+    <div class="form-group">
+    <textarea class="sms" name="sms" id="sms" rows="5" ngModel placeholder="message" required></textarea>
+    <button [disabled]="!f1.valid" type="submit" class="button7">Send</button>
+    </div>
+  </form>
+</div>

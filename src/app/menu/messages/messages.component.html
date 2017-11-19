@@ -1,0 +1,13 @@
+<div class="inside-flex">
+<div class="messages-wrapper">
+  <div class="friends-list" *ngIf="dis">
+    <div *ngFor="let friend of friends" (click)="selectUser(friend.id, friend.surname)" class="friend-one">
+    <div class="user-ico">
+      <img [src]="friend.img" alt="{{friend.name}}" class="user-img" onerror="this.src = '../../assets/images/Default.jpg'">
+    </div>
+      <p class="user-name">{{friend.name}} {{friend.surname}}</p>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>
+</div>

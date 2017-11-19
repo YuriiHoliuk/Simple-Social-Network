@@ -1,0 +1,13 @@
+<div class="inside-flex">
+<div class="user-wrapper" *ngFor="let friend of friends">
+  <div class="user-img-wrapper" (click)="selectUser(friend.id, friend.surname)">
+    <img
+      [src]="friend.img"
+      alt="{{friend.name}}"
+      class="user-img"
+      onerror="this.src = '../../assets/images/Default.jpg'"
+    >
+  </div>
+  <p class="user-name">{{friend.name}} {{friend.surname}}</p>
+</div>
+</div>

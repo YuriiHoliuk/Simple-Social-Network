@@ -1,0 +1,56 @@
+.inside-flex{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.messages-wrapper{
+  width: 100%;
+}
+
+.user-ico{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+.user-img{
+  height: 45px;
+  border-radius: 22px;
+  display: block;
+  object-fit: cover;
+}
+
+.user-name{
+  font-size: 18px;
+  font-family: "Cambria Math";
+}
+
+.friends-list{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.friend-one{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  background-color: #e6e6e6;
+}
+
+.friend-one:hover{
+  background-color: #f1f1f1;
+}

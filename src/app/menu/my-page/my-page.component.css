@@ -1,0 +1,94 @@
+.profile-wrapper{
+  width: 100%;
+}
+
+.profile-name{
+  display: flex;
+  justify-content: center;
+}
+
+.inside-flex{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.profile-photo-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img{
+  width: 200px;
+  max-height: 400px;
+  display: block;
+}
+
+.friends-query-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  padding: 10px;
+}
+
+.about-me{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.about-me-item{
+  /*outline: 1px solid dimgray;*/
+  min-height: 100px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.title{
+  width: 200px;
+  text-align: right;
+}
+
+.text{
+  width: 500px;
+}
+
+.friends{
+  width: 500px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.user-ico{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.user-img{
+  height: 45px;
+  border-radius: 22px;
+  display: block;
+  object-fit: cover;
+}

@@ -1,0 +1,27 @@
+<div class="wrapper">
+<div class="header">
+  <div class="header-item"></div>
+    <div class="header-item left">
+      <div class="title-img"></div>
+      <!--<span class="title">SimpleSocialNetwork</span>-->
+    </div>
+  <div class="header-item">
+    <div class="right" *ngIf="currentUser.id !== 0">
+    <a class="user-name" routerLink="/my-page">{{currentUser.name}}</a>
+    <div class="user-ico">
+      <img [src]="currentUser.img" alt="{{currentUser.name}}" class="user-img" onerror="this.src = '../../assets/images/Default.jpg'">
+    </div>
+      <a class="user-name" (click)="logOut()">Log out</a>
+    </div>
+  </div>
+</div>
+<app-menu *ngIf="currentUser.id !== 0"></app-menu>
+  <div class="content-wrapper">
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="footer">
+
+  </div>
+</div>

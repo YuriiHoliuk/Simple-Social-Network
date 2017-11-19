@@ -1,0 +1,16 @@
+* {
+  transition: all 0.2s;
+}
+
+/*html {*/
+  /*margin-left: calc(100vw - 100%);*/
+/*}*/
+
+html { overflow-y: scroll; }
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #e6e6e6;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}

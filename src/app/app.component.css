@@ -1,0 +1,113 @@
+.header{
+  width: 100%;
+  height: 50px;
+  background-color: steelblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-item{
+  width: 300px;
+}
+
+.title{
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-family: Verdana;
+}
+
+.left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-name{
+  outline: 0;
+  font-size: 14px;
+  color: white;
+  font-family: Verdana;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.user-ico{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 20px;
+}
+
+.user-img{
+  height: 45px;
+  border-radius: 22px;
+  display: block;
+  object-fit: cover;
+}
+
+.wrapper{
+  width: 100%;
+  min-height: 720px;
+  margin: 0px auto;
+  outline: 2px solid dimgray;
+  position: relative;
+}
+
+app-menu{
+  position: absolute;
+}
+
+.title-img{
+  width: 100%;
+  height: 50px;
+  background-image: url(../assets/images/Logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.inside-flex{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.content-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content{
+  padding: 20px;
+  width: 720px;
+  min-height: 100%;
+  background-color: white;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 15px 2px rgba(207,203,207,1);
+  -moz-box-shadow: 5px 5px 15px 2px rgba(207,203,207,1);
+  box-shadow: 5px 5px 15px 2px rgba(207,203,207,1);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.footer{
+  width: 100%;
+  height: 50px;
+  background-color: steelblue;
+  position: fixed;
+  bottom: 0;
+}
